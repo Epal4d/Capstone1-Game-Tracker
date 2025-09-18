@@ -1,0 +1,82 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "johnsmith10",
+        "email": "john@example.com",
+        "firstName": "John",
+        "lastName": "Smith",
+        "jerseyNumber": 10,
+        "position": "Forward"
+      },
+      {
+        "id": 2,
+        "username": "sarahj7",
+        "email": "sarah@example.com",
+        "firstName": "Sarah",
+        "lastName": "Johnson",
+        "jerseyNumber": 7,
+        "position": "Midfielder"
+      },
+      {
+        "id": 3,
+        "username": "mikechen23",
+        "email": "mike@example.com",
+        "firstName": "Mike",
+        "lastName": "Chen",
+        "jerseyNumber": 23,
+        "position": "Defender"
+      }
+    ],
+    "games": [
+      {
+        "id": 1,
+        "creatorUserId": 1,
+        "opponent": "Eagles FC",
+        "gameDate": "2024-09-15",
+        "homeAway": "home",
+        "teamScore": 3,
+        "opponentScore": 2,
+        "location": "City Stadium"
+      },
+      {
+        "id": 2,
+        "creatorUserId": 2,
+        "opponent": "Hawks United",
+        "gameDate": "2024-09-10",
+        "homeAway": "away",
+        "teamScore": 1,
+        "opponentScore": 1,
+        "location": "Hawks Field"
+      }
+    ],
+    "playerPerformance": [
+      {
+        "id": 1,
+        "userId": 1,
+        "gameId": 1,
+        "didPlay": true,
+        "goals": 2,
+        "assists": 1,
+        "minutesPlayed": 90
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "gameId": 1,
+        "didPlay": true,
+        "goals": 1,
+        "assists": 0,
+        "minutesPlayed": 75
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "gameId": 2,
+        "didPlay": false,
+        "goals": 0,
+        "assists": 0,
+        "minutesPlayed": 0
+      }
+    ]
+  }
