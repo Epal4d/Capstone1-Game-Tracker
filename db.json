@@ -68,6 +68,16 @@
       "teamScore": 1,
       "opponentScore": 1,
       "location": "Hawks Field"
+    },
+    {
+      "id": 3,
+      "opponent": "Losers",
+      "gameDate": "2025-09-18",
+      "homeAway": "home",
+      "teamScore": 2,
+      "opponentScore": 1,
+      "location": "Mufreesboro",
+      "creatorUserId": 1
     }
   ],
   "playerPerformance": [
