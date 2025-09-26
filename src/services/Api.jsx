@@ -70,4 +70,15 @@ export const deletePerformance = (id) => {
       method: 'DELETE',
     })
       .then(res => res.ok);
-  };
+};
+  
+export const updatePerformance = (id, performanceData) => {
+    return fetch(`${Base_Api}/playerPerformance/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(performanceData),
+    })
+      .then(response => response.json());
+};
