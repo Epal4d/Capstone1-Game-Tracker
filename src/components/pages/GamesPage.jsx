@@ -12,9 +12,8 @@ function GamesPage() {
   const navigate = useNavigate()
 
   const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}')
-
+//get games and player performances
   useEffect(() => {
-    // Load games and user's performances
     Promise.all([
       getAllGames(),
       getPerformancesByUserId(currentUser.id)
