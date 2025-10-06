@@ -4,7 +4,7 @@ import { createPerformance, getAllGames } from '../../services/api.jsx'
 import Navbar from '../layout/Navbar.jsx'
 
 function AddStatsForm() {
-  const { gameId } = useParams() //gets game id from url
+  const { gameId } = useParams() //gets game id from url resolves json problem
   const [game, setGame] = useState(null)
   const [formData, setFormData] = useState({
     didPlay: '',
@@ -80,9 +80,7 @@ function AddStatsForm() {
   }
 
   return (
-    <div className="add-stats-page">
-      <Navbar />
-      
+    <div className="add-stats-page">  
       <div className="page-content">
         <div className="page-header">
           <button onClick={() => navigate('/games')} className="back-button">

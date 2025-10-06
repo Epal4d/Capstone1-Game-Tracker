@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { createGame } from '../../services/api.jsx'
-import Navbar from '../layout/Navbar.jsx'
+import './AddGameForm.css'
 
 function AddGameForm() {
   const [formData, setFormData] = useState({
@@ -51,7 +51,7 @@ function AddGameForm() {
 
   return (
     <div className="add-game-page">
-      <Navbar />
+      
       
       <div className="page-content">
         <div className="page-header">

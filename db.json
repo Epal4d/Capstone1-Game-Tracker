@@ -116,6 +116,15 @@
       "goals": 1,
       "assists": 1,
       "minutesPlayed": 60
+    },
+    {
+      "id": "59d2",
+      "userId": 3,
+      "gameId": 3,
+      "didPlay": true,
+      "goals": 1,
+      "assists": 2,
+      "minutesPlayed": 45
     }
   ]
 }

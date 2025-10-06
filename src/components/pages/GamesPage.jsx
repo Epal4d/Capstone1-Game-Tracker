@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getAllGames, getPerformancesByUserId } from '../../services/api.jsx'
 import GameCard from '../games/GameCard.jsx'
-import Navbar from '../layout/Navbar.jsx'
+import './GamesPage.css'
 
 function GamesPage() {
   const [games, setGames] = useState([])
@@ -43,7 +43,6 @@ function GamesPage() {
 
   return (
     <div className="games-page">
-      <Navbar currentPage="games" />
 
       <div className="page-content">
         <div className="page-header">

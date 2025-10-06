@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getPlayerByUsername, getPlayerByEmail } from '../../services/api.jsx'
+import './LoginForm.css'
 
 function LoginForm() {
   const [loginValue, setLoginValue] = useState('')

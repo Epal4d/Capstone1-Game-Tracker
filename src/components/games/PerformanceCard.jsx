@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './PerformanceCard.css'
 
 function PerformanceCard({ performance, game, onUpdate, onDelete }) {
   const [isEditing, setIsEditing] = useState(false)
@@ -28,8 +29,7 @@ function PerformanceCard({ performance, game, onUpdate, onDelete }) {
       minutesPlayed: performance.minutesPlayed
     })
   }
-
-  const saveEdit = () => {
+    const saveEdit = () => {
     const updatedData = {
       ...performance, 
       didPlay: editData.didPlay,
@@ -39,10 +39,9 @@ function PerformanceCard({ performance, game, onUpdate, onDelete }) {
       minutesPlayed: editData.didPlay ? parseInt(editData.minutesPlayed) || 0 : 0
     }
 
-    // Call parent component's update function
     onUpdate(performance.id, updatedData)
     setIsEditing(false)
-  }
+    }
 
   //delete function
   const handleDelete = () => {
@@ -66,7 +65,6 @@ function PerformanceCard({ performance, game, onUpdate, onDelete }) {
         {game && <p>{game.location} ({game.homeAway})</p>}
       </div>
 
-      {/* show either edit form or show display stats */}
       {isEditing ? (
         <div className="edit-form">
           <div className="form-group">

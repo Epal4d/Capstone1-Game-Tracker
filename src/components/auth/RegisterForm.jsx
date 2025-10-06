@@ -42,7 +42,7 @@ function RegisterForm() {
           throw new Error('Email already exists')
         }
         
-        // Convert jersey number to integer
+        
         const playerData = {
           ...formData,
           jerseyNumber: parseInt(formData.jerseyNumber)
@@ -53,7 +53,7 @@ function RegisterForm() {
       .then(newPlayer => {
         // Save user to localStorage
         localStorage.setItem('currentUser', JSON.stringify(newPlayer))
-        // Redirect to dashboard
+        
         navigate('/dashboard')
       })
       .catch(err => {
